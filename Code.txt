@@ -1,0 +1,224 @@
+math.randomseed(os.time())
+number = math.random(1000,9999)
+
+player = {}
+player.guess = 0
+
+-- print(number) -- debug
+
+INTRO = [[
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+You have just made your way into a super secret government building.
+You found out that there is something unknown behind a door, which is locked by a passcode.
+]]
+
+START = [[
+
+               Try to hack your way into the room. The passcode is 4 digits.
+]]
+
+LOW = [[
+
+          INCORRECT! Your scanner detects that your guess is too low!
+]]
+
+HIGH = [[
+
+          INCORRECT! Your scanner detects that your guess is too high!
+]]
+
+RIGHT = [[
+
+               CORRECT! You have opened the vault and recieved 3.5 billion dollars from the super secret vault!
+]]
+
+while ( player.guess ~= number ) do
+  if player.guess == 0 then
+    print(INTRO)
+  else
+  
+  end
+  print(START)
+  player.answer = io.read()
+  player.guess = tonumber(player.answer)
+  if ( player.guess > number ) then
+    print(HIGH)
+  elseif ( player.guess < number ) then
+    print(LOW)
+  else
+    print(RIGHT)
+    number = math.random(1000000000, 9999999999)
+    
+    -- Round 2 Start
+
+    INTRO = [[
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+CORRECT! You have opened the vault and recieved 3.5 billion dollars from the secret vault!
+
+After recieving your money from the government vault, you upgraded your technology to tackle harder passcodes.
+In this mission, you will attempt to hack one of the most prestigeous storage warehouses for world-dominating tech.
+]]
+
+START = [[
+
+               Try to hack your way into the warehouse. The passcode is 10 digits. Good luck.
+]]
+
+LOW = [[
+
+          INCORRECT! Your scanner detects that your guess is too low!
+]]
+
+HIGH = [[
+
+          INCORRECT! Your scanner detects that your guess is too high!
+]]
+
+RIGHT = [[
+
+               CORRECT! You have gained access to the warehouse which contains a device that could conquer the universe.
+]]
+
+  print(INTRO)
+  while ( player.guess ~= number ) do
+  print(START)
+  player.answer = io.read()
+  player.guess = tonumber(player.answer)
+  if ( player.guess > number ) then
+    print(HIGH)
+  elseif ( player.guess < number ) then
+    print(LOW)
+  else
+    print(RIGHT)
+    os.exit()
+  end
+end
+  end
+end
