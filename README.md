@@ -13,5 +13,7 @@ Open the LUA application and paste the code you just copied. (CTRL + V will not 
 # Step 4
 Press enter to start the program. Have fun playing the game!
 
+If you know what you're doing, you can edit the game to make it easier or harder to play.
+
 # LUA Chrome Application
 https://chrome.google.com/webstore/detail/lua/nkcnhkobblkmiampcmimoemaeffjopph/related
